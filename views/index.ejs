@@ -1,0 +1,22 @@
+<%- include('header') %>
+<div class="container">
+    <div class="form">
+        <h2>Form Generator</h2>
+        <form action="/generate" method="POST">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" required><br>
+            <label for="middleName">Middle Name</label>
+            <input type="text" name="middleName" id="middleName"><br>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" required><br>
+            <label for="caseNumber">Case Number</label>
+            <input type="text" name="caseNumber" id="caseNumber" required><br>
+            <label for="subject">Subject</label>
+            <select name="subject" id="subject" required>
+                <option value="NDA">NDA</option>
+            </select><br>
+            <button type="submit" class="submit-button">Submit!</button>
+        </form>
+    </div>
+</div>
+<%- include('footer') %>
